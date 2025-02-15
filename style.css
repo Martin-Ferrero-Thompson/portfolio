@@ -1,0 +1,192 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    box-sizing: border-box; /* Important for consistent sizing */
+}
+
+:root {
+    --accented-text: #8214e0;
+    --lighter-heading-text: #a569e9;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    text-align: start; /* Consistent text alignment */
+    line-height: 1.5; /* Improved default line height */
+    color: #333; /* Darker default text color for better contrast */
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: start;
+    font-family: 'Montserrat', sans-serif; /* Consistent font family for headings */
+    font-weight: 700;
+    line-height: 1.2; /* Adjust line height for headings */
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 1.07px;
+}
+
+h2 {
+    font-size: 1.75rem; /* Slightly smaller h2 */
+}
+
+h3 {
+    font-size: 1.5rem; /* Slightly smaller h3 */
+}
+
+p {
+    max-width: 60ch;
+    margin-bottom: 1rem; /* Consistent spacing between paragraphs */
+}
+
+.lighter-heading {
+    margin-bottom: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 1.45rem;
+    color: var(--lighter-heading-text);
+}
+
+.accented-text {
+    color: var(--accented-text);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding: 5rem 0; /* Consistent padding for sections */
+}
+
+.hero--background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #000000, #737373);
+    z-index: -1;
+}
+
+/* CTAs */
+.cta {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.25rem; /* Adjusted font size */
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: none;
+    transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+    min-width: 150px; /* Set a minimum width */
+    min-height: 40px; /* Set a minimum height */
+    display: inline-flex; /* Use inline-flex for alignment */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    text-transform: uppercase;
+}
+
+.cta--portfolio {
+    background-color: var(--accented-text);
+    color: white;
+}
+
+.cta--resume {
+    background-color: white;
+    color: var(--accented-text);
+    border: 1px solid var(--accented-text);
+}
+
+.cta:hover {
+    opacity: 0.8; /* Slightly reduce opacity on hover */
+}
+
+/* Other Sections */
+.portfolio {
+    background-color: #f8f9fa;
+    padding: 5rem 0;
+}
+
+.resume {
+    background-color: #ffffff;
+    padding: 5rem 0;
+}
+
+.contact {
+    background-color: #f2f2f2;
+    padding: 5rem 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Darker background for footer */
+    color: #fff; /* Light text color for footer */
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer p {
+  margin: 0; /* Reset default margin for paragraph in footer */
+}
+
+/* Navbar Styling */
+.navbar-brand .navbar-text { /* Style the navbar text */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #333; /* Or your preferred logo color */
+}
+
+.navbar-nav .nav-link { /* Style the navigation links */
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #333; /* Or your preferred link color */
+    margin-left: 1rem; /* Add some spacing between links */
+}
+
+.navbar-toggler {
+    border: none; /* Remove default border from toggler */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(51, 51, 51, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Customize toggler icon */
+}
+
+
+
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for captions */
+    padding: 20px;
+}
+
+.carousel-caption h5 {
+    font-weight: bold;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent background for controls */
+}
+
+.carousel-item img {
+    max-height: 500px; /* Example max height for images */
+    object-fit: cover; /* or contain, depending on how you want the image to fit */
+}
