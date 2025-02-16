@@ -1,0 +1,24 @@
+/* Portfolio Section */
+.portfolio {
+    padding: 5rem 0;
+    background-color: #f8f9fa;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.carousel-caption h5 {
+    font-weight: bold;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+}
