@@ -3,7 +3,7 @@
     --brand-color: #8124e0;
     --secondary-color: #a569e9;
     --tertiary-color: #beacef;
-    --background-color: #82f8fb;
+    --background-color: #f2f8fb;
     --nav-background-color: #b4e0ee;
     --dark-text-color: #222222;
     --gradient-background: linear-gradient(90deg, #222222, #737373);
@@ -27,6 +27,8 @@
     --body-font-size: 1rem;
     --body-letter-spacing: 0;
     --body-line-height: 1.4;
+
+    --navbar-height: 90px; /* NavBar Height Magic Number */
 }
 
 /* General styles */

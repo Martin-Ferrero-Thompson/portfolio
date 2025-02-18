@@ -3,6 +3,9 @@
     position: relative;
     overflow: hidden;
     padding-top: var(--navbar-height);
+    display: flex; /* Needed for vertical centering of the wrapper */
+    align-items: center; /* Vertically center the wrapper within the hero */
+    min-height: 100vh; /* Optional: Ensure hero is at least full viewport height */
 }
 
 .hero--background {
@@ -15,9 +18,45 @@
     z-index: -1;
 }
 
+/* Make the hero--background the width of the container */
+.hero > .container { /* Target the direct child container of .hero */
+    position: relative; /* Make the container a positioning context */
+    padding: 0; /* Remove default container padding */
+    max-width: 1440px; /* Or your desired max-width */
+    margin: 0 auto;
+}
+
+.hero--background {
+    width: 100%; /* Make it full width of its parent (the container) */
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+
+/* New wrapper for hero content with gradient */
+.hero-content-wrapper {
+    background-image: linear-gradient(90deg, var(--brand-color), var(--tertiary-color));
+    padding: var(--hero-content-padding) 0; /* Use your CSS variable for spacing */
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 50%; /* Set height to 50% */
+}
+
 .hero-content {
     position: relative;
     z-index: 1;
+    width: fit-content; /* Ensure the content takes up its natural width */
+    max-width: 90%; /* Set max-width to 90% */
+    max-height: 90%; /* Set max-height to 90% */
+    padding: 50px; /* Add padding for spacing on all sides */
+    box-sizing: border-box; /* Include padding in width calculation */
+    background-color: white; /* Example: Add a background color to the content */
+    overflow: auto; /* Add overflow to handle content exceeding max-height */
 }
 
 /* CTAs */
@@ -43,14 +82,14 @@
 }
 
 .cta--portfolio {
-    background-color: var(--accented-text);
+    background-color: var(--brand-color); /* Use your brand color */
     color: white;
 }
 
 .cta--resume {
     background-color: white;
-    color: var(--accented-text);
-    border: 1px solid var(--accented-text);
+    color: var(--brand-color);  /* Use your brand color */
+    border: 1px solid var(--brand-color); /* Use your brand color */
 }
 
 .cta:hover {

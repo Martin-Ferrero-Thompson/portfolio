@@ -1,21 +1,36 @@
 /* navbar.css */
 
-/* Target the container-fluid DIRECTLY for overall navbar styling */
-.navbar .container-fluid {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: transparent; /* Make the container transparent */
+.navbar {
+    position: fixed; /* Key change: Fixed positioning */
+    top: 0; /* Stick to the top */
+    left: 0; /* Full width */
+    right: 0; /* Full width */
+    width: 100%; /* Ensure full width */
+    z-index: 100; /* Ensure it's above other content */
+    background-color: transparent; /* Make the navbar transparent */
 }
 
 /* Optional: Add a subtle backdrop filter for semi-transparency */
 .navbar .container-fluid {
     backdrop-filter: blur(5px); /* Adjust blur radius as needed */
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: Semi-transparent white background */
+    display: flex; /* Ensure flexbox is used */
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
 }
 
 /* ***KEY CORRECTION HERE*** */
 .navbar { /* Target the .navbar element directly */
     background-color: transparent !important; /* Override Bootstrap's bg-body-tertiary */
+}
+
+.navbar-content-wrapper {  /* New wrapper for content inside the navbar */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute space between brand, pill, and something else */
+    width: 100%; /* Ensure it takes up the full width of the container */
+    padding: 0 50px; /* Add 50px padding on left and right */
 }
 
 /* Target the pill-shaped element */
@@ -25,13 +40,12 @@
     border-radius: 25px; /* Pill shape */
     background-color: var(--nav-background-color); /* Your background color */
     padding: 0 10px; /* Adjust padding as needed */
-    margin: 0 auto; /* Center the pill */
+    margin: 0; /* Remove default margins */
 }
 
 /* Brand/Logo Styles (outside the pill) */
 .navbar-brand {
-    /* ... your brand styles ... */
-    margin-right: 1rem; /* Add some space to the right */
+    color: var(--brand-color);
 }
 
 /* Navigation Links (inside the pill) */
@@ -82,7 +96,6 @@
 /* "Something Else" Styles (outside the pill) */
 .something-else {
     /* Style this element as you like. It's outside the pill. */
-    margin-left: auto; /* Push to the right */
     color: var(--dark-text-color);
 }
 
