@@ -1,17 +1,16 @@
-.portfolio { /* Add display flex to the portfolio section */
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center horizontally */
+.portfolio {
     padding: 5rem 0;
     background-color: #f8f9fa;
 }
 
-.portfolio h2 { /* No need for text-align here */
-    /* any other h2 styles */
+.portfolio h2 {
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 #portfolioCarousel {
-    margin: 2rem 100px; /* Add top margin and side margins */
+    margin: 2rem auto; /* Center the carousel */
+    max-width: 1280px; /* Or your desired maximum width */
 }
 
 .carousel-caption {
@@ -29,6 +28,7 @@
 }
 
 .carousel-item img {
-    max-height: 500px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }

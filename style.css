@@ -39,6 +39,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: sans-serif;
@@ -95,4 +99,23 @@ nav {
 
 .gradient-background {
     background-image: var(--gradient-background);
+}
+
+.section-description { /* Style for the description paragraph */
+    text-align: center; /* Center the text */
+    margin-bottom: 2rem; /* Add some spacing below */
+    color: #777; /* Example: Use a slightly lighter color */
+    font-style: italic; /* Example: Italicize the text */
+}
+
+.btn-primary:hover { /* Target all primary buttons on hover */
+    background-color: var(--nav-background-color) !important; /* Set the hover background color */
+    border-color: var(--nav-background-color) !important;
+    color: var(--dark-text-color);
+}
+
+.btn-secondary:hover { /* Target all secondary buttons on hover */
+    background-color: var(--nav-background-color) !important; /* Set the hover background color */
+    border-color: var(--nav-background-color) !important;
+    color: var(--dark-text-color);
 }

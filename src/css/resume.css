@@ -1,5 +1,54 @@
-/* Resume Section */
+/* resume.css */
 .resume {
-    padding: 5rem 0;
-    background-color: #f2f2f2;
+    padding: 5rem 0; /* Adjust padding as needed */
+    background-color: #f8f9fa; /* Example background color */
+}
+
+.resume h2,
+.resume h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.concise-summary {
+    margin-bottom: 2rem;
+}
+
+.concise-summary p {
+    margin-bottom: 1rem;
+}
+
+.skills-sections {
+    margin-bottom: 2rem;
+}
+
+.skill-section {
+    margin-bottom: 1.5rem;
+}
+
+.skill-section h4 {
+    margin-bottom: 0.5rem;
+}
+
+.skill-section ul {
+    list-style: none; /* Remove bullet points */
+    padding-left: 20px; /* Add some indentation */
+}
+
+.chronological-section .accordion-button:not(.collapsed) {
+    color: var(--brand-color); /* Active accordion button text color */
+}
+
+.chronological-section .accordion-button:focus {
+    border-color: var(--brand-color); /* Active accordion button border color */
+    box-shadow: 0 0 0 0.25rem rgba(var(--brand-color-rgb), 0.25); /* Active accordion button box shadow color */
+}
+
+.chronological-section .accordion-body ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.chronological-section .accordion-body li {
+    margin-bottom: 0.5rem;
 }
