@@ -10,6 +10,8 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -173,6 +175,61 @@
       </form>
     </div>
   </section>
+
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <h2>Let’s Talk</h2>
+                <p>Every project starts with a chat. Let's discuss your project.</p>
+                <button class="btn btn-primary cta cta--footer" data-bs-toggle="modal" data-bs-target="#contactModal">Tell us about your project</button>
+            </div>
+            <div class="col-12 col-lg-6">
+                <dl class="contact-list">
+                    <dt><i class="fas fa-envelope"></i> Email</dt>
+                    <dd><a href="mailto:martin.ferrero.thompson@gmail.com">martin.ferrero.thompson@gmail.com</a></dd>
+                    <dt><i class="fas fa-phone"></i> Phone</dt>
+                    <dd><a href="tel:+15551234567">(+34) 610 44 84 53</a></dd>
+                    <dt><i class="fas fa-map-marker-alt"></i> Address</dt>
+                    <dd>
+                        Pamplona<br>
+                        Burlada, 31600
+                        España
+                    </dd>
+                </dl>
+                <ul class="social-links">
+                    <li><a href="https://twitter.com/example" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/example" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/example" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/example" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">  <div class="col-12">
+                <p class="copyright">&copy; 2023 Your Company Name. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="contactModalLabel">Contact Us</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Contact form will go here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
