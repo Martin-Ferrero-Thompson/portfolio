@@ -99,6 +99,10 @@
     color: var(--dark-text-color);
 }
 
+.nav-item {
+    text-transform: uppercase;
+}
+
 /* Media Query */
 @media (max-width: 992px) {
     .navbar-nav .nav-link {

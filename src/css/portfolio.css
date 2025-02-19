@@ -1,7 +1,17 @@
-/* Portfolio Section */
-.portfolio {
+.portfolio { /* Add display flex to the portfolio section */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
     padding: 5rem 0;
     background-color: #f8f9fa;
+}
+
+.portfolio h2 { /* No need for text-align here */
+    /* any other h2 styles */
+}
+
+#portfolioCarousel {
+    margin: 2rem 100px; /* Add top margin and side margins */
 }
 
 .carousel-caption {
