@@ -1,0 +1,116 @@
+:root {
+    /* Existing Color Palette */
+    --brand-color: #8124e0;
+    --secondary-color: #a569e9;
+    --tertiary-color: #beacef;
+    --background-color: #f2f8fb;
+    --nav-background-color: #b4e0ee;
+    --dark-text-color: #222222;
+    --gradient-background: linear-gradient(90deg, #222222, #737373);
+
+    /* Add Navigation-specific variables */
+    --navbar-height: 90px;
+    --navbar-padding: 1rem;
+    --navbar-brand-size: 1.5rem;
+    --navbar-link-size: 0.9rem;
+    --navbar-transition: 0.3s ease;
+    
+    /* Add some utility variables for shadows and transparency */
+    --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.1);
+    --nav-bg-transparent: rgba(255, 255, 255, 0.1);
+    --nav-bg-solid: rgba(255, 255, 255, 0.95);
+
+    /* Your existing typography variables */
+    --h1-font-family: 'Montserrat', sans-serif;
+    --h1-font-weight: 700;
+    --h1-font-size: 2rem;
+    --h1-letter-spacing: 0;
+    --h1-line-height: 1.4;
+    --h1-padding: 4px;
+
+    --h2-font-family: 'Roboto Condensed', sans-serif;
+    --h2-font-weight: 400;
+    --h2-font-size: 1.75rem;
+    --h2-letter-spacing: 0;
+    --h2-line-height: 1.4;
+
+    --body-font-family: 'Roboto Condensed', sans-serif;
+    --body-font-weight: 400;
+    --body-font-size: 1rem;
+    --body-letter-spacing: 0;
+    --body-line-height: 1.4;
+
+    --navbar-height: 90px; /* NavBar Height Magic Number */
+}
+
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Enhanced base styles */
+body {
+    /* Add padding to prevent content from hiding under fixed navbar */
+    padding-top: var(--navbar-height);
+    /* Ensure smooth scrolling for navigation links */
+    scroll-behavior: smooth;
+    /* Improve font rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Add utility classes for transitions */
+.transition-all {
+    transition: all var(--navbar-transition);
+}
+
+/* Improve link styles globally */
+a {
+    color: var(--brand-color);
+    text-decoration: none;
+    transition: color var(--navbar-transition);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+/* Add container refinements */
+.container {
+    /* Add a max-width for larger screens */
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 var(--navbar-padding);
+}
+
+/* Add styles for buttons that might be used in the navigation */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: all var(--navbar-transition);
+    font-family: var(--body-font-family);
+    font-weight: var(--body-font-weight);
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--brand-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-1px);
+}

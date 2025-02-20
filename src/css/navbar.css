@@ -96,7 +96,6 @@
 /* "Something Else" Styles (outside the pill) */
 .something-else {
     /* Style this element as you like. It's outside the pill. */
-    color: var(--dark-text-color);
 }
 
 .nav-item {
@@ -115,4 +114,8 @@
     opacity: 0;
     transform: translateY(-100%);
     pointer-events: none;
+}
+
+.navbar-text {
+    color: var(--dark-text-color);  
 }
