@@ -82,14 +82,14 @@
 }
 
 .cta--portfolio {
-    background-color: var(--brand-color); /* Use your brand color */
+    background-color: var(--brand-color); 
     color: white;
 }
 
 .cta--resume {
     background-color: white;
-    color: var(--brand-color);  /* Use your brand color */
-    border: 1px solid var(--brand-color); /* Use your brand color */
+    color: var(--brand-color); 
+    border: 1px solid var(--brand-color);
 }
 
 .cta:hover {
